@@ -50,6 +50,9 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
+        // 开启主题切换
+        	"darkmode" : true,
+            "themeLocation" : "theme.json" ,
         "appid" : "",
         "setting" : {
             "urlCheck" : false

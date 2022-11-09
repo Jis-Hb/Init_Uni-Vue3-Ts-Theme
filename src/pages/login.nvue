@@ -1,0 +1,17 @@
+<template>
+  <view class="Login" :style="theme.GetTheme"> </view>
+</template>
+
+<script setup lang="ts">
+import { ref } from 'vue'
+import useTheme from '@/Pinia/modules/Theme'
+const theme = useTheme()
+</script>
+
+<style scoped lang="scss">
+.Login {
+  background-color: $text-color;
+  height: 400rpx;
+  width: 100%;
+}
+</style>

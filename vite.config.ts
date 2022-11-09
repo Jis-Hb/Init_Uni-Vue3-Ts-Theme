@@ -30,6 +30,18 @@ export default defineConfig(({ command, mode }) => {
         },
       },
     },
+    // 自身主题切换
+    css: {
+      preprocessorOptions: {
+        scss: {
+          // 全局的scss ，跨域放多个，例如：主题的变量，和一些混合等
+          additionalData: `@import "./src/theme/theme.scss";`,
+        },
+        less: {
+          javascriptEnabled: true,
+        },
+      },
+    },
     build: {
       outDir: 'dist', // 指定打包路径，默认为项目根目录下的 dist 目录
       sourcemap: env.VITE_BUILD_SOURCEMAP === 'true',
